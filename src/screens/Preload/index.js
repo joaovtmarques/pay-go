@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useNavigation } from '@react-navigation/native';
 
-import { Container, Title } from './styles';
+import { Container, Logo } from './styles';
 
-export default function Home() {
+export default function Preload() {
+  const navigation = useNavigation();
+
+  useEffect(() => {
+    setTimeout(() => {
+      navigation.navigate('Login');
+    }, 3000);
+  }, []);
+
   return (
     <Container>
-      <Title>Home</Title>
+      <Logo source={require('../../assets/logo.png')} />
     </Container>
   );
 }

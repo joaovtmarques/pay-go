@@ -1,12 +1,16 @@
+import 'react-native-gesture-handler';
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import { SafeAreaView, StatusBar, Text } from 'react-native';
-import CardOpening from './screens/CardOpening';
+import MainStack from './navigation/mainStack';
 
 export default function App() {
   return (
-    <SafeAreaView style={{ flex: 1 }}>
-      <StatusBar barStyle="dark-content" />
-      <CardOpening />
-    </SafeAreaView>
+    <NavigationContainer>
+      <SafeAreaView style={{ flex: 1 }}>
+        <StatusBar barStyle="dark-content" />
+        <MainStack />
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }

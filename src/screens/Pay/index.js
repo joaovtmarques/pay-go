@@ -2,10 +2,10 @@ import React from 'react';
 
 import { Container, Title } from './styles';
 
-export default function Preload() {
+export default function Pay() {
   return (
     <Container>
-      <Title>Preload</Title>
+      <Title>Pay</Title>
     </Container>
   );
 }
