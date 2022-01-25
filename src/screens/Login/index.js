@@ -5,7 +5,6 @@ import { theme } from '../../global/theme';
 import {
   Button,
   ConsentContent,
-  Container,
   ContinueButton,
   ContinueTextButton,
   Header,
@@ -14,10 +13,11 @@ import {
   Text,
   Title,
 } from './styles';
+import { Container } from '../../global/global.styles';
 
 export default function Login({ navigation }) {
   return (
-    <Container>
+    <Container padTop={34 * 4}>
       <Header>
         <Title>Login</Title>
         <Button>

@@ -3,12 +3,6 @@ import styled from 'styled-components/native';
 
 import { theme } from '../../global/theme';
 
-export const Container = styled.View`
-  flex: 1;
-  padding: ${34 * 4}px 34px 34px 34px;
-  background-color: ${theme.colors.primary};
-`;
-
 export const Title = styled.Text`
   font-family: ${theme.fonts.regular};
   font-weight: 700;

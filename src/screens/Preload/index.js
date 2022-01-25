@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 
-import { Container, Logo } from './styles';
+import { Logo } from './styles';
+import { Container } from '../../global/global.styles';
 
 export default function Preload() {
   const navigation = useNavigation();
