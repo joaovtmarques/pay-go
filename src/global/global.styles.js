@@ -11,3 +11,11 @@ export const Container = styled.View`
   padding-bottom: ${(props) => props.padBottom || 34}px;
   padding-left: ${(props) => props.padLeft || 34}px;
 `;
+
+export const Content = styled.ScrollView.attrs({
+  contentContainerStyle: {
+    paddingBottom: 10,
+  },
+})`
+  flex: 1;
+`;

@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Container } from '../../global/global.styles';
-import { ListContainer, ItemsContainer, TransferTitle } from './styles';
+import { Container, Content } from '../../global/global.styles';
+import { ItemsContainer, TransferTitle } from './styles';
 
 import Header from '../../components/Header';
 import Balance from '../../components/Balance';
@@ -16,7 +16,7 @@ export default function Main() {
   return (
     <Container padTop={24} padBottom={-1}>
       <Header />
-      <ListContainer showsVerticalScrollIndicator={false}>
+      <Content showsVerticalScrollIndicator={false}>
         <Balance />
         <ItemsContainer>
           <SquareItem title="My card" icon="card-outline" />
@@ -28,7 +28,7 @@ export default function Main() {
           <TransferMainItem Icon={CardTransfer} title={`Transfer\nfunds`} />
           <TransferMainItem Icon={CardRequest} title={`Request\nfunds`} />
         </ItemsContainer>
-      </ListContainer>
+      </Content>
     </Container>
   );
 }

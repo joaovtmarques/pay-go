@@ -14,7 +14,7 @@ export default function Preload() {
   }, []);
 
   return (
-    <Container>
+    <Container align="center" justify="center">
       <Logo source={require('../../assets/logo.png')} />
     </Container>
   );

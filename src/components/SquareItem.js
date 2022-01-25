@@ -9,9 +9,9 @@ export default function SquareItem({ title, icon, Icon }) {
     <Container>
       <Button>
         {Icon ? (
-          <Icon />
+          <Icon height="34" width="34" />
         ) : (
-          <Ionicons name={icon} size={30} color={theme.colors.white} />
+          <Ionicons name={icon} size={34} color={theme.colors.white} />
         )}
       </Button>
       <Title>{title}</Title>

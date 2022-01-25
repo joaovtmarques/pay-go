@@ -1,15 +1,6 @@
 import styled from 'styled-components/native';
 import { theme } from '../../global/theme';
 
-export const ListContainer = styled.ScrollView.attrs({
-  contentContainerStyle: {
-    paddingBottom: 10,
-  },
-})`
-  flex: 1;
-  /* padding-bottom: 10px; */
-`;
-
 export const ItemsContainer = styled.View`
   width: 100%;
   flex-direction: row;

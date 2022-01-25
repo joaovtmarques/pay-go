@@ -7,7 +7,7 @@ import { theme } from '../global/theme';
 export default function TransferMainItem({ title, Icon }) {
   return (
     <Container>
-      <Icon width={34} height={30} />
+      <Icon width={30} height={30} />
       <Title>{title}</Title>
     </Container>
   );
