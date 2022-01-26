@@ -6,6 +6,8 @@ export const Container = styled.View`
   justify-content: center;
 `;
 
-export const Title = styled.Text`
-  font-size: 16px;
+export const PaymentItemsContainer = styled.View``;
+
+export const ListItems = styled.ScrollView`
+  width: 100%;
 `;

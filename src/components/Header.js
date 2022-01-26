@@ -24,8 +24,9 @@ const Container = styled.View`
   width: 100%;
   align-items: center;
   flex-direction: row;
-  padding-bottom: 15px;
+  padding: 15px 34px;
   justify-content: space-between;
+  background-color: ${theme.colors.primary};
 `;
 
 const NotificationButton = styled.TouchableOpacity``;

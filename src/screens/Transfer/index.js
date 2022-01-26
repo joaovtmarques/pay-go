@@ -3,31 +3,29 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import { theme } from '../../global/theme';
 import {
-  Title,
   WhoToSendContainer,
-  WhoToSendText,
   Linear,
   InputContainer,
   InputField,
   ItemsContainer,
   AllButton,
 } from './styles';
-import { Container, Content } from '../../global/global.styles';
+import { Container, Content, Title, Text } from '../../global/global.styles';
 
 import Header from '../../components/Header';
-import CircleItemPerson from '../../components/CircleItemPerson';
 import TransferItem from '../../components/TransferItem';
+import CircleItemPerson from '../../components/CircleItemPerson';
 
 import CardRequest from '../../assets/card-request.svg';
 
 export default function Transfer() {
   return (
-    <Container padTop={24} padBottom={-1}>
+    <Container>
       <Header />
       <Content showsVerticalScrollIndicator={false}>
         <Title>Money transaction</Title>
         <WhoToSendContainer>
-          <WhoToSendText>Who to send</WhoToSendText>
+          <Text>Who to send</Text>
           <Ionicons name="scan-sharp" size={30} color={theme.colors.green} />
         </WhoToSendContainer>
         <Linear
@@ -41,7 +39,7 @@ export default function Transfer() {
         >
           <InputContainer>
             <InputField
-              keyboardType={'phone-pad'}
+              keyboardType="phone-pad"
               placeholder="Card or phone number"
               placeholderTextColor="rgba(255, 255, 255, 0.55)"
             />
@@ -60,7 +58,7 @@ export default function Transfer() {
           <CircleItemPerson text="MW" icon />
         </ItemsContainer>
         <AllButton>
-          <WhoToSendText color={theme.colors.green}>All</WhoToSendText>
+          <Text color={theme.colors.green}>All</Text>
         </AllButton>
         <ItemsContainer flexDirection="column">
           <TransferItem text="Transfer to my card" />

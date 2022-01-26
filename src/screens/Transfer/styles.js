@@ -2,28 +2,12 @@ import LinearGradient from 'react-native-linear-gradient';
 import styled from 'styled-components/native';
 import { theme } from '../../global/theme';
 
-export const Title = styled.Text`
-  font-size: 34px;
-  font-weight: 700;
-  text-align: center;
-  color: ${theme.colors.white};
-  font-family: ${theme.fonts.regular};
-`;
-
 export const WhoToSendContainer = styled.View`
   width: 100%;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 34px;
-`;
-
-export const WhoToSendText = styled.Text`
-  font-size: 20px;
-  font-weight: 700;
-  text-align: center;
-  color: ${(props) => props.color || theme.colors.white};
-  font-family: ${theme.fonts.regular};
 `;
 
 export const Linear = styled(LinearGradient)`

@@ -17,7 +17,7 @@ import { Container } from '../../global/global.styles';
 
 export default function Login({ navigation }) {
   return (
-    <Container padTop={34 * 4}>
+    <Container padTop={34 * 4} padBottom={34} padRight={34} padLeft={34}>
       <Header>
         <Title>Login</Title>
         <Button>

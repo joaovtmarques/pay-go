@@ -3,7 +3,6 @@ import styled from 'styled-components/native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
-import Grid from '../assets/grid-header.svg';
 import { theme } from '../global/theme';
 
 export default function TransferItem({ text, Icon }) {

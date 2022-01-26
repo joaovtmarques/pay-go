@@ -14,7 +14,7 @@ import CardRequest from '../../assets/card-request.svg';
 
 export default function Main() {
   return (
-    <Container padTop={24} padBottom={-1}>
+    <Container padBottom={-1}>
       <Header />
       <Content showsVerticalScrollIndicator={false}>
         <Balance />

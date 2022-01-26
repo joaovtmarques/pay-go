@@ -4,35 +4,31 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import { theme } from '../global/theme';
 
-export default function SquareItem({ title, icon, Icon }) {
+export default function PaymentItem({ title, image }) {
   return (
     <Container>
-      <Button>
-        {Icon ? (
-          <Icon height="34" width="34" />
-        ) : (
-          <Ionicons name={icon} size={34} color={theme.colors.white} />
-        )}
-      </Button>
+      <Logo source={image} />
       <Title>{title}</Title>
     </Container>
   );
 }
 
-const Container = styled.View`
-  margin-top: 34px;
-  align-items: center;
-  justify-content: center;
-`;
-
-const Button = styled.TouchableOpacity`
+const Container = styled.TouchableOpacity`
   width: 100px;
   height: 100px;
-  padding: 15px;
   align-items: center;
-  border-radius: 22px;
   justify-content: center;
-  background-color: ${theme.colors.green};
+  padding: 15px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: ${theme.colors.secondary};
+`;
+
+const Logo = styled.Image`
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+  background-color: ${theme.colors.white3};
 `;
 
 const Title = styled.Text`
